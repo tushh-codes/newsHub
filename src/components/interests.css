@@ -1,0 +1,136 @@
+.interests_wrapper {
+  height: 92vh;
+  width: 100vw;
+  background: #536976;
+  background: -webkit-linear-gradient(to right, #292e49, #536976);
+  background: linear-gradient(to right, #292e49, #536976);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+h1 {
+  color: white;
+}
+.selected {
+  color: white;
+  margin-top: 5vh;
+}
+
+.newsTags {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #0a0d1c;
+  padding: 20px;
+  border-radius: 3px;
+  width: 60vw;
+  height: 30vh;
+}
+
+.container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+ul.ks-cboxtags {
+  list-style: none;
+  padding: 20px;
+}
+ul.ks-cboxtags li {
+  display: inline;
+  margin: 5px;
+}
+ul.ks-cboxtags li label {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 2px solid rgba(139, 139, 139, 0.3);
+  color: #000;
+  border-radius: 25px;
+  white-space: nowrap;
+  margin: 3px 0px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: all 0.2s;
+}
+
+ul.ks-cboxtags li label {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+ul.ks-cboxtags li label::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 900;
+  font-size: 12px;
+  padding: 2px 6px 2px 2px;
+  content: '\f067';
+  transition: transform 0.3s ease-in-out;
+}
+
+ul.ks-cboxtags li input[type='checkbox']:checked + label::before {
+  content: '\f00c';
+  transform: rotate(-360deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+ul.ks-cboxtags li input[type='checkbox']:checked + label {
+  border: 2px solid #0016a4;
+  color: #fff;
+  background-color: black;
+  transition: all 0.2s;
+}
+
+ul.ks-cboxtags li input[type='checkbox'] {
+  display: absolute;
+}
+ul.ks-cboxtags li input[type='checkbox'] {
+  position: absolute;
+  opacity: 0;
+}
+ul.ks-cboxtags li input[type='checkbox']:focus + label {
+  border: 2px solid #0016a4;
+  color: #fff;
+  background-color: black;
+}
+
+.feed_button {
+  background: linear-gradient(to right, #86f66d, #55ff2f);
+  font-family: 'Inconsolata', monospace;
+  font-weight: bold;
+  height: 30px;
+  width: 150px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 20px;
+}
+
+.feed_button:hover {
+  cursor: pointer;
+  background: rgb(35, 86, 186);
+  color: whitesmoke;
+  border: 2px dotted white;
+}
+.feed_button a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Inconsolata', monospace;
+  font-weight: bold;
+}
